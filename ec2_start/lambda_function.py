@@ -6,7 +6,7 @@ def lambda_handler(event, context):
     filter = [
         {
             'Name': 'tag:Name',
-            'Values': ['cronjob']
+            'Values': ['ec2trainingstartstop']
         }
         ]
     instances = ec2.instances.filter(Filters=filter)
